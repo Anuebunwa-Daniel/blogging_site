@@ -8,19 +8,33 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <div class="container" style="background: white; padding: 10px">
-        <nav>
-            <h1>All Blogs</h1>
-            <a href="/">Back</a>
-        </nav>
-        <% posts.forEach(post=>{%>
-            <div class="posts">
-                <h2>Title: <span class="noBold"><%= post.title %></span></h2>
-                <h2>Author: <span class="noBold"><%= post.name %></span></h2>
-                <p><%=post.body%></p>
+    <div class ="container">
+        <h1> GOSSIP BLOG </h1> 
+        <p>Home of all breaking and trending news, celebrity leaks, sports, fashion, music, etc </p>
+        
+        <a href="/blogs">View Blogs</a>
+       
+        <div class="p">
+            <div class="container" style="background: white; padding: 10px">
+                <nav>
+                    <h1>All Blogs</h1>
+                    <a href="/">Back</a>
+                </nav>
+                <% posts.forEach(post=>{%>
+                    <div class="posts">
+                        <h2>Title: <span class="noBold"><%= post.title %></span></h2>
+                        <h2>Author: <span class="noBold"><%= post.name %></span></h2>
+                        <p><%=post.body%></p>
+        
+                    </div>
+               <% })%>
 
-            </div>
-       <% })%>
+            <a class="reg" href="/register">Register</a>
+            <a class="log" href="/Login">Login</a>
+            
+        </div>
+        </form>
+    
     </div>
 </body>
 </html>

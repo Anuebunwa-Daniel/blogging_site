@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
+    <title>REGISTRATION PAGE</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <div class ="container">
         <h1> Register </h1> 
        
-        <a href="/blogs">View Blogs</a>
-        <form action="/successRegister" method="post">
+        <a href="/">View Blogs</a>
+        <form action="/register" method="post">
+           
             <label for="username" >Username</label>
             <input type="text" id="username" name="username" placeholder="username">
             <br>
             <lable for="title">Email</lable>
-            <input type="text" id="Email" name="Email" placeholder="Email">
+            <input type="text" id="email" name="email" placeholder="email">
             <br>
             <br>
             <label for="body">Password</label>
@@ -25,6 +27,7 @@
             <br>
             <input id="submit" type="submit">
         </form>
+        
     </div>
 </body>
 </html>
